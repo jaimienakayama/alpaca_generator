@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+/* --------- Global styles --------*/
+
+body {
+  padding: 20px;
+  background-color: #282c34;
+}
+
+.container {
+  margin: 0px 80px;
+}
+
+.content-container {
+  width: 90vw;
+  display: flex;
+}
+
+/* --------- Header styles --------*/
+
+.header {
+  font-family: "Roboto Mono", monospace;
+  font-size: 40pt;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.author {
+  font-family: "Roboto Mono", monospace;
+  font-size: 24pt;
+  text-transform: uppercase;
+  color: #9ed866;
+}
+
+/* --------- Image styles --------*/
+
+.image-background,
+.ears,
+.accessories,
+.eyes,
+.hair,
+.leg,
+.mouth,
+.neck,
+.nose {
+  position: absolute;
+  left: 108px;
+}
+
+.neck,
+.ears,
+.leg {
+  z-index: 2;
+}
+
+.hair {
+  z-index: 3;
+}
+
+.accessories,
+.eyes,
+.nose {
+  z-index: 4;
+}
+
+.mouth {
+  z-index: 5;
+}
+
+.image-background {
+  z-index: 1;
+}
+
+/* --------- Options styles --------*/
+
+.options-container {
+  margin-left: 30px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20pt;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 40vw;
+  font-weight: 700;
+}
+
+.options-header {
+  margin-bottom: 20px;
+}
+
+hr.solid {
+  border-top: 3px solid #ffffff;
+}
+
+/* --------- Buttons styles --------*/
+
+.btns-container input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.btn,
+.btns-container label {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 0px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  margin: 0px 10px 20px 0px;
+  transition: ease-in 250ms;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btns-container label:hover,
+.btns-container input[type="radio"]:checked + label {
+  background-color: #ffffff;
+  color: #282c34;
+}
+
+.download-btn-container {
+  width: 480px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 480px;
+}
