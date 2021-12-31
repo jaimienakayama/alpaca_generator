@@ -6,5 +6,6 @@ This is a [project](https://www.codementor.io/projects/web/alpaca-image-generato
 
 To start using this app, run `npm run build` in your terminal.
 
-Open index.html on your browser.
+Open `index.html` on your browser.
 
+Start building your customized Alpaca!
