@@ -6,7 +6,6 @@
   "author": "jaimienakayama <jaimie.nakayama@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "start": "npx nodemon server/index.js",
     "build": "webpack --mode production --watch",
     "build-dev": "webpack --mode development --watch"
   },
