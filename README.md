@@ -4,7 +4,9 @@ This is a [project](https://www.codementor.io/projects/web/alpaca-image-generato
 
 ## Setup
 
-To start using this app, run `npm run build` in your terminal.
+To start using this app, run `npm install` then `npm run build` in your terminal.
+
+
 
 Open `index.html` on your browser.
 
