@@ -6,4 +6,4 @@ To run this app locally, run `npm install` to install the app's dependencies, th
 
 This app is also deployed on Heroku -> https://alpaca-generator.herokuapp.com/
 
-Have fun building your own alpaca! 
+Have fun building your own alpaca! Cheers!
