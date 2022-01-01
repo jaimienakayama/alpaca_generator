@@ -11,7 +11,7 @@ const Image = ({
   currentAccessories,
 }) => {
   return (
-    <>
+    <div id="alpaca" className="alpaca">
       <img
         src={
           currentBackground
@@ -61,7 +61,7 @@ const Image = ({
         className="neck"
       />
       <img src="../../alpaca/nose.png" alt="nose" className="nose" />
-    </>
+    </div>
   );
 };
 
