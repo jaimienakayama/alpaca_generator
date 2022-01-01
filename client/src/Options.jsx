@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Input from "../src/Input.jsx";
+import Button from "../src/Button.jsx";
 
 const Options = ({
   setCurrentBackground,
@@ -12,6 +12,7 @@ const Options = ({
   setCurrentAccessories,
 }) => {
   const [currentView, setCurrentView] = useState(null);
+
   const options = {
     background: [
       {
@@ -291,28 +292,80 @@ const Options = ({
     ],
   };
 
-  const optionsOnChange = (e) => {
-    setCurrentView(e.target.value);
+  const addClass = (e) => {
+    const selectedProperty = document.querySelectorAll(".property-selected");
+    if (selectedProperty.length === 0) {
+      e.target.classList.toggle("property-selected");
+    } else {
+      selectedProperty[0].classList.toggle("property-selected");
+      e.target.classList.toggle("property-selected");
+    }
+
+    const currentSelectedStyles = document.querySelectorAll(".styles-selected");
+    if (currentSelectedStyles.length > 0) {
+      currentSelectedStyles[0].classList.toggle("styles-selected");
+    }
   };
 
   return (
     <div className="options-container">
       <div className="options-header">Accessorize Your Alpaca</div>
       <div className="btns-container">
-        <Input
-          id="radioBackground"
+        <Button
           value="background"
-          onChange={() => setCurrentView("background")}
+          onChange={(e) => {
+            addClass(e);
+            setCurrentView("background");
+          }}
         />
-        <Input value="ears" onChange={() => setCurrentView("ears")} />
-        <Input value="eyes" onChange={() => setCurrentView("eyes")} />
-        <Input value="hair" onChange={() => setCurrentView("hair")} />
-        <Input value="leg" onChange={() => setCurrentView("leg")} />
-        <Input value="mouth" onChange={() => setCurrentView("mouth")} />
-        <Input value="neck" onChange={() => setCurrentView("neck")} />
-        <Input
+        <Button
+          value="ears"
+          onChange={(e) => {
+            addClass(e);
+            setCurrentView("ears");
+          }}
+        />
+        <Button
+          value="eyes"
+          onChange={(e) => {
+            addClass(e);
+            setCurrentView("eyes");
+          }}
+        />
+        <Button
+          value="hair"
+          onChange={(e) => {
+            addClass(e);
+            setCurrentView("hair");
+          }}
+        />
+        <Button
+          value="leg"
+          onChange={(e) => {
+            addClass(e);
+            setCurrentView("leg");
+          }}
+        />
+        <Button
+          value="mouth"
+          onChange={(e) => {
+            addClass(e);
+            setCurrentView("mouth");
+          }}
+        />
+        <Button
+          value="neck"
+          onChange={(e) => {
+            addClass(e);
+            setCurrentView("neck");
+          }}
+        />
+        <Button
           value="accessories"
-          onChange={() => setCurrentView("accessories")}
+          onChange={(e) => {
+            addClass(e);
+            setCurrentView("accessories");
+          }}
         />
       </div>
       <hr className="solid"></hr>
@@ -321,9 +374,17 @@ const Options = ({
         {currentView &&
           options[currentView].map((o) => {
             return (
-              <Input
+              <Button
                 value={o.style}
-                onChange={() => {
+                onChange={(e) => {
+                  const selectedStyles =
+                    document.querySelectorAll(".styles-selected");
+                  if (selectedStyles.length === 0) {
+                    e.target.classList.toggle("styles-selected");
+                  } else {
+                    selectedStyles[0].classList.toggle("styles-selected");
+                    e.target.classList.toggle("styles-selected");
+                  }
                   o.onChange(o.url);
                 }}
               />
