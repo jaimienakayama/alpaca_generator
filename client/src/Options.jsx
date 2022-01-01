@@ -1,5 +1,57 @@
 import React, { useState } from "react";
 import Button from "../src/Button.jsx";
+import blue50 from "../dist/alpaca/backgrounds/blue50.png";
+import blue60 from "../dist/alpaca/backgrounds/blue60.png";
+import blue70 from "../dist/alpaca/backgrounds/blue70.png";
+import darkblue30 from "../dist/alpaca/backgrounds/darkblue30.png";
+import darkblue50 from "../dist/alpaca/backgrounds/darkblue50.png";
+import darkblue70 from "../dist/alpaca/backgrounds/darkblue70.png";
+import green50 from "../dist/alpaca/backgrounds/green50.png";
+import green60 from "../dist/alpaca/backgrounds/green60.png";
+import green70 from "../dist/alpaca/backgrounds/green70.png";
+import grey40 from "../dist/alpaca/backgrounds/grey40.png";
+import grey70 from "../dist/alpaca/backgrounds/grey70.png";
+import grey80 from "../dist/alpaca/backgrounds/grey80.png";
+import red50 from "../dist/alpaca/backgrounds/red50.png";
+import red60 from "../dist/alpaca/backgrounds/red60.png";
+import red70 from "../dist/alpaca/backgrounds/red70.png";
+import yellow50 from "../dist/alpaca/backgrounds/yellow50.png";
+import yellow60 from "../dist/alpaca/backgrounds/yellow60.png";
+import yellow70 from "../dist/alpaca/backgrounds/yellow70.png";
+import defaultEars from "../dist/alpaca/ears/default.png";
+import tiltBackEars from "../dist/alpaca/ears/tilt-backward.png";
+import tiltForEars from "../dist/alpaca/ears/tilt-forward.png";
+import defaultEyes from "../dist/alpaca/eyes/default.png";
+import angryEyes from "../dist/alpaca/eyes/angry.png";
+import naughtyEyes from "../dist/alpaca/eyes/naughty.png";
+import pandaEyes from "../dist/alpaca/eyes/panda.png";
+import smartEyes from "../dist/alpaca/eyes/smart.png";
+import starEyes from "../dist/alpaca/eyes/star.png";
+import defaultHair from "../dist/alpaca/hair/default.png";
+import bangHair from "../dist/alpaca/hair/bang.png";
+import curlsHair from "../dist/alpaca/hair/curls.png";
+import elegantHair from "../dist/alpaca/hair/elegant.png";
+import fancyHair from "../dist/alpaca/hair/fancy.png";
+import quiffHair from "../dist/alpaca/hair/quiff.png";
+import shortHair from "../dist/alpaca/hair/short.png";
+import defaultLeg from "../dist/alpaca/leg/default.png";
+import bubbleTeaLeg from "../dist/alpaca/leg/bubble-tea.png";
+import cookieLeg from "../dist/alpaca/leg/cookie.png";
+import gameConsoleLeg from "../dist/alpaca/leg/game-console.png";
+import tiltBackLeg from "../dist/alpaca/leg/tilt-backward.png";
+import tiltForLeg from "../dist/alpaca/leg/tilt-forward.png";
+import defaultMouth from "../dist/alpaca/mouth/default.png";
+import astonishedMouth from "../dist/alpaca/mouth/astonished.png";
+import eatingMouth from "../dist/alpaca/mouth/eating.png";
+import laughMouth from "../dist/alpaca/mouth/laugh.png";
+import tongueMouth from "../dist/alpaca/mouth/tongue.png";
+import defaultNeck from "../dist/alpaca/neck/default.png";
+import bendBackNeck from "../dist/alpaca/neck/bend-backward.png";
+import bendForNeck from "../dist/alpaca/neck/bend-forward.png";
+import earringsAccess from "../dist/alpaca/accessories/earings.png";
+import flowerAccess from "../dist/alpaca/accessories/flower.png";
+import glassesAccess from "../dist/alpaca/accessories/glasses.png";
+import headphoneAccess from "../dist/alpaca/accessories/headphone.png";
 
 const Options = ({
   setCurrentBackground,
@@ -17,276 +69,276 @@ const Options = ({
     background: [
       {
         style: "Blue 50",
-        url: "../../alpaca/backgrounds/blue50.png",
+        url: blue50,
         onChange: setCurrentBackground,
       },
       {
         style: "Blue 60",
-        url: "../../alpaca/backgrounds/blue60.png",
+        url: blue60,
         onChange: setCurrentBackground,
       },
       {
         style: "Blue 70",
-        url: "../../alpaca/backgrounds/blue70.png",
+        url: blue70,
         onChange: setCurrentBackground,
       },
       {
         style: "Dark Blue 30",
-        url: "../../alpaca/backgrounds/darkblue30.png",
+        url: darkblue30,
         onChange: setCurrentBackground,
       },
       {
         style: "Dark Blue 50",
-        url: "../../alpaca/backgrounds/darkblue50.png",
+        url: darkblue50,
         onChange: setCurrentBackground,
       },
       {
         style: "Dark Blue 70",
-        url: "../../alpaca/backgrounds/darkblue70.png",
+        url: darkblue70,
         onChange: setCurrentBackground,
       },
       {
         style: "Green 50",
-        url: "../../alpaca/backgrounds/green50.png",
+        url: green50,
         onChange: setCurrentBackground,
       },
       {
         style: "Green 60",
-        url: "../../alpaca/backgrounds/green60.png",
+        url: green60,
         onChange: setCurrentBackground,
       },
       {
         style: "Green 70",
-        url: "../../alpaca/backgrounds/green70.png",
+        url: green70,
         onChange: setCurrentBackground,
       },
       {
         style: "Grey 40",
-        url: "../../alpaca/backgrounds/grey40.png",
+        url: grey40,
         onChange: setCurrentBackground,
       },
       {
         style: "Grey 70",
-        url: "../../alpaca/backgrounds/grey70.png",
+        url: grey70,
         onChange: setCurrentBackground,
       },
       {
         style: "Grey 80",
-        url: "../../alpaca/backgrounds/grey80.png",
+        url: grey80,
         onChange: setCurrentBackground,
       },
       {
         style: "Red 50",
-        url: "../../alpaca/backgrounds/red50.png",
+        url: red50,
         onChange: setCurrentBackground,
       },
       {
         style: "Red 60",
-        url: "../../alpaca/backgrounds/red60.png",
+        url: red60,
         onChange: setCurrentBackground,
       },
       {
         style: "Red 70",
-        url: "../../alpaca/backgrounds/red70.png",
+        url: red70,
         onChange: setCurrentBackground,
       },
       {
         style: "Yellow 50",
-        url: "../../alpaca/backgrounds/yellow50.png",
+        url: yellow50,
         onChange: setCurrentBackground,
       },
       {
         style: "Yellow 60",
-        url: "../../alpaca/backgrounds/yellow60.png",
+        url: yellow60,
         onChange: setCurrentBackground,
       },
       {
         style: "Yellow 70",
-        url: "../../alpaca/backgrounds/yellow70.png",
+        url: yellow70,
         onChange: setCurrentBackground,
       },
     ],
     ears: [
       {
         style: "Default",
-        url: "../../alpaca/ears/default.png",
+        url: defaultEars,
         onChange: setCurrentEars,
       },
       {
         style: "Tilt Backward",
-        url: "../../alpaca/ears/tilt-backward.png",
+        url: tiltBackEars,
         onChange: setCurrentEars,
       },
       {
         style: "Tilt Forward",
-        url: "../../alpaca/ears/tilt-forward.png",
+        url: tiltForEars,
         onChange: setCurrentEars,
       },
     ],
     eyes: [
       {
         style: "Default",
-        url: "../../alpaca/eyes/default.png",
+        url: defaultEyes,
         onChange: setCurrentEyes,
       },
       {
         style: "Angry",
-        url: "../../alpaca/eyes/angry.png",
+        url: angryEyes,
         onChange: setCurrentEyes,
       },
       {
         style: "Naughty",
-        url: "../../alpaca/eyes/naughty.png",
+        url: naughtyEyes,
         onChange: setCurrentEyes,
       },
       {
         style: "Panda",
-        url: "../../alpaca/eyes/panda.png",
+        url: pandaEyes,
         onChange: setCurrentEyes,
       },
       {
         style: "Smart",
-        url: "../../alpaca/eyes/smart.png",
+        url: smartEyes,
         onChange: setCurrentEyes,
       },
       {
         style: "Star",
-        url: "../../alpaca/eyes/star.png",
+        url: starEyes,
         onChange: setCurrentEyes,
       },
     ],
     hair: [
       {
         style: "Default",
-        url: "../../alpaca/hair/default.png",
+        url: defaultHair,
         onChange: setCurrentHair,
       },
       {
         style: "Bang",
-        url: "../../alpaca/hair/bang.png",
+        url: bangHair,
         onChange: setCurrentHair,
       },
       {
         style: "Curls",
-        url: "../../alpaca/hair/curls.png",
+        url: curlsHair,
         onChange: setCurrentHair,
       },
       {
         style: "Elegant",
-        url: "../../alpaca/hair/elegant.png",
+        url: elegantHair,
         onChange: setCurrentHair,
       },
       {
         style: "Fancy",
-        url: "../../alpaca/hair/fancy.png",
+        url: fancyHair,
         onChange: setCurrentHair,
       },
       {
         style: "Quiff",
-        url: "../../alpaca/hair/quiff.png",
+        url: quiffHair,
         onChange: setCurrentHair,
       },
       {
         style: "Short",
-        url: "../../alpaca/hair/short.png",
+        url: shortHair,
         onChange: setCurrentHair,
       },
     ],
     leg: [
       {
         style: "Default",
-        url: "../../alpaca/leg/default.png",
+        url: defaultLeg,
         onChange: setCurrentLeg,
       },
       {
         style: "Bubble Tea",
-        url: "../../alpaca/leg/bubble-tea.png",
+        url: bubbleTeaLeg,
         onChange: setCurrentLeg,
       },
       {
         style: "Cookie",
-        url: "../../alpaca/leg/cookie.png",
+        url: cookieLeg,
         onChange: setCurrentLeg,
       },
       {
         style: "Game Console",
-        url: "../../alpaca/leg/game-console.png",
+        url: gameConsoleLeg,
         onChange: setCurrentLeg,
       },
       {
         style: "Tilt Backward",
-        url: "../../alpaca/leg/tilt-backward.png",
+        url: tiltBackLeg,
         onChange: setCurrentLeg,
       },
       {
         style: "Tilt Forward",
-        url: "../../alpaca/leg/tilt-forward.png",
+        url: tiltForLeg,
         onChange: setCurrentLeg,
       },
     ],
     mouth: [
       {
         style: "Default",
-        url: "../../alpaca/mouth/default.png",
+        url: defaultMouth,
         onChange: setCurrentMouth,
       },
       {
         style: "Astonished",
-        url: "../../alpaca/mouth/astonished.png",
+        url: astonishedMouth,
         onChange: setCurrentMouth,
       },
       {
         style: "Eating",
-        url: "../../alpaca/mouth/eating.png",
+        url: eatingMouth,
         onChange: setCurrentMouth,
       },
       {
         style: "Laugh",
-        url: "../../alpaca/mouth/laugh.png",
+        url: laughMouth,
         onChange: setCurrentMouth,
       },
       {
         style: "Tongue",
-        url: "../../alpaca/mouth/tongue.png",
+        url: tongueMouth,
         onChange: setCurrentMouth,
       },
     ],
     neck: [
       {
         style: "Default",
-        url: "../../alpaca/neck/default.png",
+        url: defaultNeck,
         onChange: setCurrentNeck,
       },
       {
         style: "Bend Backward",
-        url: "../../alpaca/neck/bend-backward.png",
+        url: bendBackNeck,
         onChange: setCurrentNeck,
       },
       {
         style: "Bend Forward",
-        url: "../../alpaca/neck/bend-forward.png",
+        url: bendForNeck,
         onChange: setCurrentNeck,
       },
     ],
     accessories: [
       {
         style: "Earrings",
-        url: "../../alpaca/accessories/earings.png",
+        url: earringsAccess,
         onChange: setCurrentAccessories,
       },
       {
         style: "Flower",
-        url: "../../alpaca/accessories/flower.png",
+        url: flowerAccess,
         onChange: setCurrentAccessories,
       },
       {
         style: "Glasses",
-        url: "../../alpaca/accessories/glasses.png",
+        url: glassesAccess,
         onChange: setCurrentAccessories,
       },
       {
         style: "Headphone",
-        url: "../../alpaca/accessories/headphone.png",
+        url: headphoneAccess,
         onChange: setCurrentAccessories,
       },
     ],
