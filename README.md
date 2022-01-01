@@ -5,6 +5,6 @@ This is a [project](https://www.codementor.io/projects/web/alpaca-image-generato
 ## Setup
 
 Run these commands in your terminal:
-`npm install
-npm run start
-npm run build`
+`npm install`
+`npm run start`
+`npm run build`
