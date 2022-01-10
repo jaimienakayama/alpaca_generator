@@ -4,6 +4,7 @@ This is a [project](https://www.codementor.io/projects/web/alpaca-image-generato
 
 To run this app locally after cloning this repo, run `npm install` in your terminal to install the app's dependencies. Then run `npm run start` to start your server. Then run `npm run build` to build the app.
 
-This app is also deployed on Heroku -> https://alpaca-generator.herokuapp.com/
-
 Have fun building your own alpaca! Cheers!
+
+This app is hosted on Heroku: https://alpaca-generator.herokuapp.com/
+
