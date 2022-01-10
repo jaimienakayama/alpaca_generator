@@ -32,7 +32,6 @@ import bangHair from "../dist/alpaca/hair/bang.png";
 import curlsHair from "../dist/alpaca/hair/curls.png";
 import elegantHair from "../dist/alpaca/hair/elegant.png";
 import fancyHair from "../dist/alpaca/hair/fancy.png";
-import quiffHair from "../dist/alpaca/hair/quiff.png";
 import shortHair from "../dist/alpaca/hair/short.png";
 import defaultLeg from "../dist/alpaca/leg/default.png";
 import bubbleTeaLeg from "../dist/alpaca/leg/bubble-tea.png";
@@ -231,11 +230,6 @@ const Options = ({
       {
         style: "Fancy",
         url: fancyHair,
-        onChange: setCurrentHair,
-      },
-      {
-        style: "Quiff",
-        url: quiffHair,
         onChange: setCurrentHair,
       },
       {
